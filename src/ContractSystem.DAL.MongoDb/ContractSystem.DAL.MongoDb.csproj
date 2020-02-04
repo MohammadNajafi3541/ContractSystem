@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\test\ContractSystem.Utilities\ContractSystem.Utilities.csproj" />
     <ProjectReference Include="..\ContractSystem.Domain\ContractSystem.Domain.csproj" />
   </ItemGroup>
 
