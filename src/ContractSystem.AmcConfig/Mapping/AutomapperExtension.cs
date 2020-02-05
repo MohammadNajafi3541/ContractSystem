@@ -8,6 +8,11 @@ namespace ContractSystem.AmcConfig.Mapping
 {
    public static class AutomapperExtension
     {
+        /// <summary>
+        /// this extension class is for adding automapper service to startup. automapper is component for convert class together
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection AddAutoMapperExtensionService(this IServiceCollection services)
         {
 

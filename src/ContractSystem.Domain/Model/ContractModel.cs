@@ -6,6 +6,9 @@ using FluentValidation;
 
 namespace ContractSystem.Domain.Model
 {
+    /// <summary>
+    /// we have contractmodel for ui intraction and convert in to contract for databse intraction
+    /// </summary>
   public  class ContractModel
     {
         public string Id { get; set; }

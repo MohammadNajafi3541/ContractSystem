@@ -10,10 +10,13 @@ namespace ContractSystem.IocConfig.Base
 {
     public static class ContextServicesRegistry
     {
-       public static void AddCustomContextServices(this IServiceCollection services)
+        /// <summary>
+        /// this is an extension class for injecting IContractDatabaseSettings to ContractDatabaseSettings in endpoint.core startup
+        /// </summary>
+        /// <param name="services"></param>
+        public static void AddCustomContextServices(this IServiceCollection services)
         {
-            services.AddSingleton<IContractDatabaseSettings>(sp =>
-                sp.GetRequiredService<IOptions<ContractDatabaseSettings>>().Value);
+            services.AddSingleton<IContractDatabaseSettings>(sp =>sp.GetRequiredService<IOptions<ContractDatabaseSettings>>().Value);
         }
     }
 }

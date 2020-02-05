@@ -14,11 +14,15 @@ namespace ContractSystem.AmcConfig.Mapping
         {
 
         }
-
+        /// <summary>
+        /// this extension class is for adding  class mapps to startup. automapper is component for convert class together
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         protected AutoMapperProfileConfiguration(string profileName)
         : base(profileName)
         {
-
+            // These codes are used to introduce classes to the automapper
             #region Contract
             CreateMap<Contract, ContractModel>();
             CreateMap<ContractModel, Contract>()

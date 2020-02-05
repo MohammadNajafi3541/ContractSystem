@@ -9,9 +9,13 @@ namespace ContractSystem.IocConfig.Content
 {
     public static class ContentServicesRegistry
     {
+        /// <summary>
+        /// this is an extension class for injecting our custom interface  to our custom service in endpoint.core startup
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddCustomContentServices(this IServiceCollection services)
         {
-            services.AddTransient<IContractService, ContractService>();
+            services.AddScoped<IContractService, ContractService>();
         }
     }
 }
