@@ -15,10 +15,16 @@ xUnit.net is a free, open source, community-focused unit testing tool for the .N
 An Example of [Net Core 2.0](https://github.com/dotnet/core) WebApi tested using [xUnit 2.2.0](https://github.com/xunit/xunit)
 
 For installation instructions see the ASP.NET Core [README.md](https://github.com/aspnet/Home)
- 
+
+### Installation
+    Please install mongodb (https://docs.mongodb.com/manual/installation/). 
+    Set the database ConnectionString in ContractSystem.Endpoint.Core>appsettings.json file.
+    for testing please Set the database ConnectionString in ContractSystem.DAL.MongoDb.Tests>ContractServiceTest.
+
 ### Restore
     dotnet restore
   
 ### Test
     dotnet test
-    Can run this command in project root or in Visual Studio package manager
+
+run this command in project root or in Visual Studio package manager
