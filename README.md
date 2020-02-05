@@ -17,9 +17,10 @@ An Example of [Net Core 2.0](https://github.com/dotnet/core) WebApi tested using
 For installation instructions see the ASP.NET Core [README.md](https://github.com/aspnet/Home)
 
 ### Installation
-    Please install mongodb (https://docs.mongodb.com/manual/installation/). 
-    Set the database ConnectionString in ContractSystem.Endpoint.Core>appsettings.json file.
-    for testing please Set the database ConnectionString in ContractSystem.DAL.MongoDb.Tests>ContractServiceTest.
+    
+Please install mongodb [mongodb installation](https://docs.mongodb.com/manual/installation/). 
+Set the database ConnectionString in ContractSystem.Endpoint.Core>appsettings.json file.
+for testing please Set the database ConnectionString in ContractSystem.DAL.MongoDb.Tests>ContractServiceTest.
 
 ### Restore
     dotnet restore
